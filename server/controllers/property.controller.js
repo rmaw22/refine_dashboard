@@ -7,18 +7,13 @@ import { v2 as cloudinary } from "cloudinary";
 
 dotenv.config();
 
-// cloudinary.config({
-//     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-//     api_key: process.env.CLOUDINARY_API_KEY,
-//     api_secret: process.env.CLOUDINARY_API_SECRET,
-// });
-
-// Configuration 
 cloudinary.config({
-    cloud_name: "dbsfxgghq",
-    api_key: "426788212329519",
-    api_secret: "pKZeinskn3cX5nI20nVkpcUT9KY"
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
 });
+
+
 
 const getAllProperties = async (req, res) => {
     const {
